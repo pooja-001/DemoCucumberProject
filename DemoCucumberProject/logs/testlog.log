@@ -1,0 +1,49 @@
+2021-07-21 14:38:06,370 - stepDefinitions.Steps -INFO - launching browser
+ 2021-07-21 14:38:14,397 - stepDefinitions.Steps -INFO - opening URL
+ 2021-07-21 14:38:20,788 - stepDefinitions.Steps -INFO - entering login information
+ 2021-07-21 14:38:21,387 - stepDefinitions.Steps -INFO - cliking on login
+ 2021-07-21 14:38:30,590 - stepDefinitions.Steps -INFO - closing the browser
+ 2021-07-26 12:22:32,508 - stepDefinitions.Steps -INFO - launching browser
+ 2021-07-26 12:22:45,656 - stepDefinitions.Steps -INFO - opening URL
+ 2021-07-26 12:22:52,430 - stepDefinitions.Steps -INFO - entering login information
+ 2021-07-26 12:22:53,165 - stepDefinitions.Steps -INFO - cliking on login
+ 2021-07-26 12:23:01,708 - stepDefinitions.Steps -INFO - closing the browser
+ 2021-07-26 12:26:16,132 - stepDefinitions.Steps -INFO - launching browser
+ 2021-07-26 12:26:23,832 - stepDefinitions.Steps -INFO - opening URL
+ 2021-07-26 12:26:30,274 - stepDefinitions.Steps -INFO - entering login information
+ 2021-07-26 12:26:31,147 - stepDefinitions.Steps -INFO - cliking on login
+ 2021-07-26 12:26:39,870 - stepDefinitions.Steps -INFO - closing the browser
+ 2021-07-26 12:29:56,446 - stepDefinitions.Steps -INFO - launching browser
+ 2021-07-26 12:34:22,589 - stepDefinitions.Steps -INFO - launching browser
+ 2021-07-26 12:34:29,296 - stepDefinitions.Steps -INFO - opening URL
+ 2021-07-26 12:34:35,058 - stepDefinitions.Steps -INFO - entering login information
+ 2021-07-26 12:34:35,688 - stepDefinitions.Steps -INFO - cliking on login
+ 2021-07-26 12:34:43,105 - stepDefinitions.Steps -INFO - closing the browser
+ 2021-07-26 15:41:26,513 - stepDefinitions.Steps -INFO - launching browser
+ 2021-07-26 15:41:33,223 - stepDefinitions.Steps -INFO - opening URL
+ 2021-07-26 15:41:37,766 - stepDefinitions.Steps -INFO - entering login information
+ 2021-07-26 15:41:38,525 - stepDefinitions.Steps -INFO - cliking on login
+ 2021-07-26 15:48:14,237 - stepDefinitions.Steps -INFO - launching browser
+ 2021-07-26 15:48:21,134 - stepDefinitions.Steps -INFO - opening URL
+ 2021-07-26 15:48:25,815 - stepDefinitions.Steps -INFO - entering login information
+ 2021-07-26 15:48:26,437 - stepDefinitions.Steps -INFO - cliking on login
+ 2021-07-26 15:48:39,404 - stepDefinitions.Steps -INFO - closing the browser
+ 2021-07-26 15:48:40,817 - stepDefinitions.Steps -INFO - launching browser
+ 2021-07-26 15:48:45,225 - stepDefinitions.Steps -INFO - opening URL
+ 2021-07-26 15:48:56,645 - stepDefinitions.Steps -INFO - entering login information
+ 2021-07-26 15:48:57,234 - stepDefinitions.Steps -INFO - cliking on login
+ 2021-07-26 15:49:46,672 - stepDefinitions.Steps -INFO - launching browser
+ 2021-07-26 15:49:50,220 - stepDefinitions.Steps -INFO - opening URL
+ 2021-07-26 15:49:55,898 - stepDefinitions.Steps -INFO - entering login information
+ 2021-07-26 15:49:56,552 - stepDefinitions.Steps -INFO - cliking on login
+ 2021-07-26 15:50:39,030 - stepDefinitions.Steps -INFO - launching browser
+ 2021-07-26 15:50:42,606 - stepDefinitions.Steps -INFO - opening URL
+ 2021-07-26 15:50:49,576 - stepDefinitions.Steps -INFO - entering login information
+ 2021-07-26 15:50:50,134 - stepDefinitions.Steps -INFO - cliking on login
+ 2021-07-26 16:09:49,568 - stepDefinitions.Steps -INFO - launching browser
+ 2021-07-26 16:09:56,370 - stepDefinitions.Steps -INFO - opening URL
+ 2021-07-26 16:10:01,571 - stepDefinitions.Steps -INFO - entering login information
+ 2021-07-26 16:10:02,221 - stepDefinitions.Steps -INFO - cliking on login
+ 2021-07-26 16:10:39,846 - stepDefinitions.Steps -INFO - closing the browser
+ 2021-07-26 16:10:42,623 - stepDefinitions.Steps -INFO - launching browser
+ 
