@@ -29,7 +29,7 @@ public class LoginPage {
 	@CacheLookup
 	private WebElement btnLogin;
 	
-	@FindBy(xpath ="//*[text()='Logout']")
+	@FindBy(xpath ="//*[@id=\"navbarText\"]/ul/li[3]/a")
 	@CacheLookup
 	private WebElement btnLogout;
 	
@@ -48,7 +48,7 @@ public class LoginPage {
 	}
 	
 	public void clickLogout() {
-		waithelper.WaitForElement(btnLogout, 30);
+		//waithelper.WaitForElement(btnLogout, 30);
 		btnLogout.click();
 	}
 	

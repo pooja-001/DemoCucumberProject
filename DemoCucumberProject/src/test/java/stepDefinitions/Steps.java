@@ -1,15 +1,5 @@
 package stepDefinitions;
 
-import cucumber.api.java.en.Given;
-
-
-import cucumber.api.java.en.When;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.And;
-import cucumber.api.junit.Cucumber;
-import junit.framework.Assert;
-import net.bytebuddy.implementation.FieldAccessor.PropertyConfigurable;
 import pageObjects.LoginPage;
 
 import java.io.FileInputStream;
@@ -19,12 +9,16 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.junit.Assert;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import io.cucumber.java.*;
+import io.cucumber.java.en.*;
+import io.cucumber.junit.*;
 import com.google.j2objc.annotations.Property;
 
 
@@ -38,7 +32,7 @@ public class Steps extends Base{
 		PropertyConfigurator.configure("log4j.properties");
 		log.info("launching browser");
 		prop=new Properties();
-		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\resource\\data.properties");
+		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\data.properties");
 		prop.load(fis);
 		//mvn -Dbrowser=chrome
 		//String browser = System.getProperty("browser");
@@ -101,6 +95,7 @@ public class Steps extends Base{
 
     @When("^User click on Logout link$")
     public void user_click_on_logout_link() throws Throwable {
+    	Thread.sleep(3000);
     	lp.clickLogout();
     	Thread.sleep(3000);
         

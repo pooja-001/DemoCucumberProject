@@ -1,206 +1,99 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Customers.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/features/Login.feature");
 formatter.feature({
-  "line": 1,
-  "name": "Customers",
+  "name": "Login",
   "description": "",
-  "id": "customers",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 6268795700,
-  "status": "passed"
-});
 formatter.scenario({
-  "line": 3,
-  "name": "Add a new Customer",
+  "name": "Sucessful Login with valid credentials",
   "description": "",
-  "id": "customers;add-a-new-customer",
-  "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 2,
-      "name": "@b"
+      "name": "@a"
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
-  "line": 4,
   "name": "User Initialize the browser with chrome",
   "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "User opens \"https://admin-demo.nopcommerce.com\" site",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 6,
-  "name": "User enters Username as \"admin@yourstore.com\" and Password \"admin\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 7,
-  "name": "Click on Login",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "Login page Title Should be \"Dashboard\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "User click on Customers menu item",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "Click on Add new buttom",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
-  "name": "User can view Add new customer page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "User enter customer information",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 13,
-  "name": "Click on Save button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "User can view confirmation massage \"The new customer has been added sucessfully\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 15,
-  "name": "Close browsers",
-  "keyword": "And "
 });
 formatter.match({
   "location": "Steps.user_Initialize_the_browser_with_chrome()"
 });
 formatter.result({
-  "duration": 809095400,
   "status": "passed"
 });
+formatter.step({
+  "name": "User opens \"https://admin-demo.nopcommerce.com\" site",
+  "keyword": "When "
+});
 formatter.match({
-  "arguments": [
-    {
-      "val": "https://admin-demo.nopcommerce.com",
-      "offset": 12
-    }
-  ],
   "location": "Steps.user_opens_something_site(String)"
 });
 formatter.result({
-  "duration": 5205259100,
   "status": "passed"
 });
+formatter.step({
+  "name": "User enters Username as \"admin@yourstore.com\" and Password \"admin\"",
+  "keyword": "And "
+});
 formatter.match({
-  "arguments": [
-    {
-      "val": "admin@yourstore.com",
-      "offset": 25
-    },
-    {
-      "val": "admin",
-      "offset": 60
-    }
-  ],
   "location": "Steps.user_enters_Username_as_and_Password(String,String)"
 });
 formatter.result({
-  "duration": 648485100,
   "status": "passed"
+});
+formatter.step({
+  "name": "Click on Login",
+  "keyword": "And "
 });
 formatter.match({
   "location": "Steps.click_on_login()"
 });
 formatter.result({
-  "duration": 37003052100,
   "status": "passed"
 });
+formatter.step({
+  "name": "Login page Title Should be \"Dashboard\"",
+  "keyword": "Then "
+});
 formatter.match({
-  "arguments": [
-    {
-      "val": "Dashboard",
-      "offset": 28
-    }
-  ],
   "location": "Steps.login_page_Title_Should_be(String)"
 });
 formatter.result({
-  "duration": 560485800,
   "status": "passed"
+});
+formatter.step({
+  "name": "User click on Logout link",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "Steps.user_click_on_Customers_menu_item()"
+  "location": "Steps.user_click_on_logout_link()"
 });
 formatter.result({
-  "duration": 53700,
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on WINDOWS (ddac02a12f8df962ca5d074dda248a11)] -\u003e xpath: //*[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-0B249GS5\u0027, ip: \u0027169.254.134.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.9.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\\Users\\Pramodh\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ddac02a12f8df962ca5d074dda248a11\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat utilities.WaitHelper.WaitForElement(WaitHelper.java:15)\r\n\tat pageObjects.LoginPage.clickLogout(LoginPage.java:51)\r\n\tat stepDefinitions.Steps.user_click_on_logout_link(Steps.java:98)\r\n\tat ✽.User click on Logout link(file:src/test/java/features/Login.feature:10)\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "Logout page Title should be \"Your store. Login\"",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "Steps.click_on_Add_new_buttom()"
+  "location": "Steps.logout_page_Title_should_be(String)"
 });
 formatter.result({
-  "duration": 50300,
-  "status": "passed"
+  "status": "skipped"
 });
-formatter.match({
-  "location": "Steps.user_can_view_Add_new_customer_page()"
+formatter.step({
+  "name": "close browsers",
+  "keyword": "And "
 });
+formatter.match({});
 formatter.result({
-  "duration": 54200,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "Steps.user_enter_customer_information()"
-});
-formatter.result({
-  "duration": 49000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.click_on_Save_button()"
-});
-formatter.result({
-  "duration": 51800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "The new customer has been added sucessfully",
-      "offset": 36
-    }
-  ],
-  "location": "Steps.user_can_view_confirmation_massage(String)"
-});
-formatter.result({
-  "duration": 97900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.close_browsers()"
-});
-formatter.result({
-  "duration": 2714559700,
-  "status": "passed"
-});
-formatter.uri("Login.feature");
-formatter.feature({
-  "line": 1,
-  "name": "Login",
-  "description": "",
-  "id": "login",
-  "keyword": "Feature"
 });
