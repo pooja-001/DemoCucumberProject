@@ -9,7 +9,7 @@ Scenario: Sucessful Login with valid credentials
 	Then Login page Title Should be "Dashboard"
 	When User click on Logout link
 	Then Logout page Title should be "Your store. Login"
-	And close browsers
+	And Close browsers
 @b	
 Scenario Outline: Login with Data driven
 	Given User Initialize the browser with chrome
