@@ -10,6 +10,7 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 
 
 public class Listeners extends Base implements ITestListener{
@@ -25,24 +26,24 @@ public class Listeners extends Base implements ITestListener{
 
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		//extentTest.get().log(Status.PASS, "Test Passed");
+		extentTest.get().log(Status.PASS, "Test Passed");
 		extentTest.get().pass("Test Passed");
-		WebDriver driver=null;
-		String testcaseName=result.getMethod().getMethodName();
-		try {
-			driver=(WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} 
-		try {
-			extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testcaseName,driver),result.getMethod().getMethodName());
-			
-			getScreenShotPath(testcaseName,driver);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		WebDriver driver=null;
+//		String testcaseName=result.getMethod().getMethodName();
+//		try {
+//			driver=(WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} 
+//		try {
+//			extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testcaseName,driver),result.getMethod().getMethodName());
+//			
+//			getScreenShotPath(testcaseName,driver);
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 	}
 		
 

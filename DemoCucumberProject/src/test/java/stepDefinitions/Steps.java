@@ -39,7 +39,7 @@ public class Steps extends Base{
 		String browser = prop.getProperty("browser");
 		if(browser.contains("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\selenium\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 			ChromeOptions options=new ChromeOptions();
 			if(browser.contains("headless"))
 			{
@@ -50,7 +50,7 @@ public class Steps extends Base{
 		}
 		else if(browser.equals("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\selenium\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\Drivers\\geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
 		
